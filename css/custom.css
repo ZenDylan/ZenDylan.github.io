@@ -58,15 +58,12 @@ body, #article-container {
 
 /* ===================== 黑白简约主题 ===================== */
 
-/* 主题色变量覆盖 */
 :root {
   --anzhiyu-main: #1a1a1a !important;
   --anzhiyu-main-op: rgba(26, 26, 26, 0.1) !important;
   --anzhiyu-theme: #1a1a1a !important;
   --anzhiyu-theme-op: rgba(26, 26, 26, 0.1) !important;
   --anzhiyu-hover-color: #1a1a1a !important;
-
-  /* 阴影变量 - 统一改为黑灰色 */
   --anzhiyu-shadow-red: 0 8px 20px rgba(30, 30, 30, 0.4) !important;
   --anzhiyu-shadow-blue: 0 8px 20px rgba(80, 80, 80, 0.4) !important;
   --anzhiyu-shadow-green: 0 8px 20px rgba(130, 130, 130, 0.4) !important;
@@ -74,60 +71,47 @@ body, #article-container {
   --anzhiyu-shadow-pink: 0 8px 20px rgba(100, 100, 100, 0.4) !important;
 }
 
-/* 首页顶部分类卡片 - 红色卡片改为深黑 */
 .home-top-group .top-group-item.red {
   background: linear-gradient(135deg, #1a1a1a, #333333) !important;
 }
-
-/* 首页顶部分类卡片 - 蓝色卡片改为深灰 */
 .home-top-group .top-group-item.blue {
   background: linear-gradient(135deg, #3a3a3a, #555555) !important;
 }
-
-/* 首页顶部分类卡片 - 绿色卡片改为中灰 */
 .home-top-group .top-group-item.green {
   background: linear-gradient(135deg, #555555, #777777) !important;
 }
 
-/* 导航栏链接hover颜色 */
 #nav a:hover,
 #nav .nav-item:hover {
   color: #1a1a1a !important;
 }
 
-/* 链接颜色 */
 a {
   color: #1a1a1a !important;
 }
-
 a:hover {
   color: #555555 !important;
 }
 
-/* 按钮/标签主色 */
 .btn-default,
 .tag-plugin-button {
   background: #1a1a1a !important;
   border-color: #1a1a1a !important;
 }
 
-/* 文章标签 */
 .tags-item a:hover,
 .tag-cloud-tags a:hover {
   background: #1a1a1a !important;
   color: #fff !important;
 }
 
-/* 滚动条 */
 ::-webkit-scrollbar-thumb {
   background: #888 !important;
 }
-
 ::-webkit-scrollbar-thumb:hover {
   background: #333 !important;
 }
 
-/* 分页按钮 */
 .pagination .page-number.current,
 .pagination .page-number:hover {
   background: #1a1a1a !important;
@@ -135,13 +119,80 @@ a:hover {
   color: #fff !important;
 }
 
-/* 目录高亮 */
 #toc .active a {
   color: #1a1a1a !important;
   border-left-color: #1a1a1a !important;
 }
 
-/* 引用块左边框 */
 blockquote {
   border-left-color: #1a1a1a !important;
+}
+
+/* ===================== 深色侧边栏 ===================== */
+
+/* 作者卡片 - 深色背景 */
+#aside-content .card-widget.card-author {
+  background: #1a1a1a !important;
+  color: #fff !important;
+}
+
+#aside-content .card-author .author-info__name,
+#aside-content .card-author .author-info__description,
+#aside-content .card-author .site-data .data-item .count,
+#aside-content .card-author .site-data .data-item .text {
+  color: #fff !important;
+}
+
+/* 作者卡片社交图标 */
+#aside-content .card-author .card-author-social-list a {
+  color: rgba(255, 255, 255, 0.8) !important;
+  background: rgba(255, 255, 255, 0.12) !important;
+}
+#aside-content .card-author .card-author-social-list a:hover {
+  color: #fff !important;
+  background: rgba(255, 255, 255, 0.25) !important;
+}
+
+/* 作者卡片分割线 */
+#aside-content .card-author .site-data {
+  border-top: 1px solid rgba(255, 255, 255, 0.15) !important;
+}
+
+/* 作者卡片头像 */
+#aside-content .card-author .author-info img {
+  border: 3px solid rgba(255, 255, 255, 0.25) !important;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5) !important;
+}
+
+/* 其余侧边栏卡片 */
+#aside-content .card-widget:not(.card-author) {
+  background: #f5f5f5 !important;
+}
+
+/* 侧边栏卡片标题 */
+#aside-content .card-widget .item-headline i,
+#aside-content .card-widget .item-headline span {
+  color: #1a1a1a !important;
+}
+
+/* 侧边栏标签 */
+#aside-content .card-tags .tags-item a:hover {
+  background: #1a1a1a !important;
+  color: #fff !important;
+  border-color: #1a1a1a !important;
+}
+
+/* 侧边栏归档 */
+#aside-content .card-archives li a:hover {
+  color: #1a1a1a !important;
+}
+
+/* 侧边栏最新文章 */
+#aside-content .card-recent-post .recent-post-item:hover .article-title {
+  color: #1a1a1a !important;
+}
+
+/* 网站信息 */
+#aside-content .card-webinfo .webinfo-item .webinfo-item-count {
+  color: #1a1a1a !important;
 }
